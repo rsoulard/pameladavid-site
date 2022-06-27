@@ -1,0 +1,48 @@
+---
+---
+
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+$theme-colors:map-merge($theme-colors, (
+    "black": #000000,
+    "yellow": #fdf200,
+    "beblue": #235789
+));
+
+@import "bootstrap/bootstrap";
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container-fluid {
+    height: 100%;
+    min-height: 100%;
+}
+
+#page-container {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.statement {
+    font-size: x-large;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+.statement-md {
+    font-size: larger;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.jumbotron-image{
+    background-image: url("/assets/images/Pamela David_Hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
